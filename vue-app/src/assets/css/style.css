@@ -1,0 +1,165 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+body {background-color: #0490ee;}
+
+nav {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    }
+    nav div{
+    height: 30px;
+    flex-grow: 4;
+    padding: 10px;
+    }
+    nav div img {
+    height: 100%;
+    }
+    nav div.search-container > input {
+    box-sizing: border-box;
+    height: 30px;
+    width: 80%;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    }
+    nav div.search-container > button {
+    box-sizing: border-box;
+    height: 30px;
+    width: 20%;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    background-color: #0490ee;
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    background-color: aliceblue;
+    border: solid medium rgb(126, 126, 126);
+    border-radius: 10px;
+}
+
+.center_area {
+    background-color: #e0e0e0;
+    height: 100%;
+    margin: 0 auto;
+    min-width: 300px;
+    padding: 3%;
+    padding-top: 3%;
+    width: 50%;
+}
+.post_area {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: left;
+}
+
+.posts{
+    background-color: #e0e0e0;
+    box-shadow: 1px 1px 15px 2px grey;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family:Georgia;
+    font-style: oblique;
+    font-size: 21px;
+
+}
+
+.posts_header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.posts_header ~ p {
+    color: black;
+}
+
+.profile_picture img {
+    height: 45px;
+    width: 45px;
+}
+
+.profile_picture + p {
+    color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+.post_like>.like_button img {
+    height: 30px;
+    width: 30px;
+}
+
+.posts_image{
+    margin: 0 -10px;
+    margin-top: 10px;
+
+}
+.posts_image img{
+    width: 100%;
+}
+
+.post_like>.like_button img {
+    height: 30px;
+    width: 30px;
+}
+
+
+#login-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-button {
+    box-sizing: border-box;
+    height: 30px;
+    width: 30%;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    background-color: #0490ee;
+}
