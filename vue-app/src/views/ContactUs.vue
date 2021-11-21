@@ -1,5 +1,5 @@
 <template>
-  <div class="contacus">
+  <div class="contactus">
     <h1>Contacts</h1>
     <div v-for="contact in contacts" :key="contact.phone" :email=contact.email>
       <p>
