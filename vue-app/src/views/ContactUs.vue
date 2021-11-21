@@ -1,51 +1,24 @@
 <template>
   <div class="contacus">
-    <h1>Contact Us</h1>
-    <h3>Marketing</h3>
-    <ul>
-      <li>
-        <p>
-          Telephone number: 1234567
-        </p>
-      </li>
-      <li>
-        <p>
-          Email: marketing@postit.com
-        </p>
-      </li>
-      <li>
-        <p>
-          Team leader: Mary
-        </p>
-      </li>
-      <li>
-        <p>
-          Team: John, Joanne, Harry
-        </p>
-      </li>
-    </ul>
-    <h3>Customer support</h3>
-    <ul>
-      <li>
-        <p>
-          Telephone number: 2234567
-        </p>
-      </li>
-      <li>
-        <p>
-          Email: support@postit.com
-        </p>
-      </li>
-      <li>
-        <p>
-          Team leader: Steve
-        </p>
-      </li>
-      <li>
-        <p>
-          Team: Lisa, Kristen
-        </p>
-      </li>
-    </ul>
+    <h1>Contacts</h1>
+    <div v-for="contact in contacts" :key="contact.phone" :email=contact.email>
+      <p>
+        Tel: {{contact.phone}} <br> Email: {{contact.email}}
+      </p>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "contactus",
+  data(){
+    return{
+      contacts:[
+        {phone: "+327 999 8888", email: "support@postit.com"},
+        {phone: "+327 999 7777", email: "marketing@postit.com"},
+      ]
+    }
+  }
+}
+</script>
